@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ormuco Test</title>
+  </head>
+  <body>
+    <div align="center" style="margin-top: 70px;">
+      <form action="{% url 'index' %}" method="post"> {% csrf_token %}
+        <label for="name">Your name:</label> <br>
+        <input type="text" name="name" placeholder="Your name" required> <br><br>
+        <label for="col">Your favorite color:</label> <br>
+        <input type="color" name="col" placeholder="color" required> <br><br>
+        <label for="animal">Your favorite animal:</label> <br>
+        <select name="ani" required>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+        </select> <br><br>
+        <input type="submit" name="submit" value="Submit">
+      </form>
+    </div>
+    <div align="center" name="error"><p>{{ resp }}</p><div>
+  </body>
+</html>
