@@ -5,8 +5,6 @@ form that accepts three fields as input: "Name", "Favorite Color", "Cats or Dogs
 
 Framework: Django.
 
-Database: SQLite.
-
 Superuser: jarh1992
 
 pass: Ormucotest
